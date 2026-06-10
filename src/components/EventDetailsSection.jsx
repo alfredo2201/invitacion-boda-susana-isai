@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { WEDDING_CONFIG } from '../constant';
-import local from '../assets/local.png'
+import fotoLocal from '../assets/local.PNG'
 // ============================================
 // DETALLES DEL EVENTO
 // ============================================
@@ -88,7 +88,7 @@ export function EventDetailsSection() {
               <div className='px-10'>
                 <img
                   className=' rounded-2xl'
-                  src={local} alt="" />
+                  src={fotoLocal} alt="" />
               </div>
 
 
