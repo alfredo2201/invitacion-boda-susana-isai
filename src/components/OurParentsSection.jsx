@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import foto from '../assets/pedida_1.png'
 import isaiParents from '../assets/padres-isai.jpg'
+import susanaParents from '../assets/papas-susana.jpeg'
 // import { WEDDING_CONFIG } from '../constant';
 // ============================================
 // MAPA DE GOOGLE
@@ -36,8 +36,8 @@ export default function OurParents() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-center mt-10 flex flex-col"
         >
-          <div className='w-65 h-65  self-center bg-black/10 rounded-full border-8 border-white shadow-2xl flex items-center justify-center'>
-            <img src={foto} alt="not image" className='rounded-full' />
+          <div lassName='w-65 h-65 self-center bg-black/10 rounded-full border-8 border-white shadow-2xl flex items-center justify-center'>
+            <img src={susanaParents} alt="not image" className='w-65 h-65 object-cover rounded-full' />
           </div>
           <br />
           <p className='luxurious-script-regular text-[#FFFBF2] text-[35px]'>
