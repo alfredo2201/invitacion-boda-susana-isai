@@ -2,9 +2,9 @@ import { useScroll, useTransform } from 'framer-motion';
 import { CountdownSection } from './components/CountdownSection'
 import { HeroSection } from './components/HeroSection';
 import { EventDetailsSection } from './components/EventDetailsSection';
-import  OurParents  from './components/OurParentsSection';
+import OurParents from './components/OurParentsSection';
 import { RSVPSection } from './components/RSVPSection'
-import  DressCode  from './components/DressCodeSection';
+import DressCode from './components/DressCodeSection';
 import { VerseSection } from './components/VerseSection';
 import GallerySection from './components/GallerySection';
 import { Footer } from './components/Footer';
@@ -23,7 +23,7 @@ export default function WeddingInvitation() {
 
 
   return (
-    <div className="relative bg-white text-[#2C2C2C] overflow-x-hidden">
+    <div className="relative bg-[#FFFBF2] text-[#2C2C2C] overflow-x-hidden">
       {/* 
         Formato para la invitacion
         Seccion 1 -> Inicio
@@ -65,11 +65,11 @@ export default function WeddingInvitation() {
       
       */}
 
-      
+
 
       {/* Inicio */}
       <InitialSection initialOpacity={initialOpacity} initialScale={initialScale}></InitialSection>
-      <HeroSection/>
+      <HeroSection />
       {/* Galeria de fotos */}
       <GallerySection></GallerySection>
       {/* Nuestros Padres*/}
@@ -78,16 +78,16 @@ export default function WeddingInvitation() {
       <EventDetailsSection />
       {/* Dress Code */}
       <OurParents></OurParents>
-      {/* Invitacion a la boda */}
-      <DressCode></DressCode>
       {/* Programa */}
       <ProgramSection></ProgramSection>
+      {/* Invitacion a la boda */}
+      <DressCode></DressCode>
       {/* Regalos */}
       <GiftSection></GiftSection>
       {/* Confirmacion de asistencia */}
       <RSVPSection />
       {/* Galeria de fotos */}
-      <VerseSection />      
+      <VerseSection />
       {/* Footer */}
       <Footer />
     </div>

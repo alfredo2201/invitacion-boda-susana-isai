@@ -17,7 +17,7 @@ export default function GiftSection() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={isInView ? { opacity: 1, y: 0 } : {}}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="text-[60px] md:text-6xl imperial-script-regular text-[#2C2C2C]">
+                        className="text-[60px] md:text-6xl luxurious-script-regular text-[#2C2C2C]">
                         Mesa de Regalos
                     </motion.h1>
 
@@ -41,9 +41,9 @@ export default function GiftSection() {
                         </svg>
 
                         <motion.div 
-                        className='w-1/2 h-10 border-1 border-black/30 rounded-sm text-black hover:bg-black/10 transition-all shadow-md hover:shadow-lg hover:scale-105'>
+                        className='w-3/4 h-10 border-1 border-black/30 rounded-sm text-black hover:bg-black/10 transition-all shadow-md hover:shadow-lg hover:scale-105'>
                             <a href="https://www.amazon.com.mx/wedding/guest-view/2POKARETCRD4M"
-                            className='text-[15px]'
+                            className='text-[15px] playfair-display-main'
                             >VER MESA DE REGALO</a>
                         </motion.div>
                     </motion.div>
