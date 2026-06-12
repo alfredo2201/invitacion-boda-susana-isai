@@ -1,5 +1,10 @@
 import { useRef } from 'react';
 import { useInView } from 'framer-motion';
+import church from '../assets/church-2.svg'
+import recepcion from '../assets/recepcion.svg'
+import novios from '../assets/novios.svg'
+import dinner from '../assets/dinner.svg'
+import people from '../assets/people.svg'
 
 export default function ProgramSection() {
     const ref = useRef(null);
@@ -10,9 +15,10 @@ export default function ProgramSection() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8 }}
-                className="text-center my-3"
+                className="text-center my-3 flex flex-col justify-center items-center"
             >
                 <h1 className='luxurious-script-regular text-[50px]'>Itinerario</h1>
+                <p className='playfair-display-main -translate-y-5'>Los detalles del gran d&iacute;a</p>
                 <div className='grid grid-cols-3'>
                     {/* Columna izquierda */}
                     <div className='flex flex-col gap-10 text-right pr-4'>
@@ -47,9 +53,29 @@ export default function ProgramSection() {
                             />
                         ))}
                     </div>
-
-                    {/* Columna derecha */}
-                    <div />
+                    <div className='flex flex-col gap-10 text-left pr-4'>
+                        <div className='h-15'>
+                            <img src={church} alt="" className='h-13' />
+                        </div>
+                        <div className='h-15'>
+                            <img src={recepcion} alt="" className='h-13' />
+                        </div>
+                        <div className='h-15'>
+                            <img src={novios} alt="" className='h-13' />
+                        </div>
+                        <div className='h-15'>
+                            <img src={dinner} alt="" className='h-15' />
+                        </div>
+                    </div>
+                </div>
+                <img src={""} alt="" />
+                <div className='w-3/4 h-13 border-1 border-[#B8B5A7] self-center mt-10 rounded-lg flex items-center justify-center'>
+                    <div className='w-1/5 h-full justify-center items-center flex'>
+                        <img src={people} alt="" className='h-10' />
+                    </div>
+                    <div className='w-4/5'>
+                        <p className='playfair-display-main text-[13px] text-left'>Toda la informacion organizada para que solo te preocupes por disfrutar</p>
+                    </div>
                 </div>
             </div>
         </section>
