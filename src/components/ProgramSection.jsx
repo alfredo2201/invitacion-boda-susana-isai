@@ -69,11 +69,11 @@ export default function ProgramSection() {
                     </div>
                 </div>
                 <img src={""} alt="" />
-                <div className='w-3/4 h-13 border-1 border-[#B8B5A7] self-center mt-10 rounded-lg flex items-center justify-center'>
-                    <div className='w-1/5 h-full justify-center items-center flex'>
-                        <img src={people} alt="" className='h-10' />
+                <div className='w-3/4 lg:w-1/3 h-18 border-1 border-[#B8B5A7] self-center mt-10 rounded-lg flex items-center justify-center'>
+                    <div className='w-1/6 h-full justify-center items-center flex'>
+                        <img src={people} alt="" className='h-8' />
                     </div>
-                    <div className='w-4/5'>
+                    <div className='w-5/6'>
                         <p className='playfair-display-main text-[13px] text-left'>Toda la informacion organizada para que solo te preocupes por disfrutar</p>
                     </div>
                 </div>

@@ -2,12 +2,13 @@ import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import gift from '../assets/gif.svg'
 import sobre from '../assets/sobre.svg'
+import mp from '../assets/MP.svg'
 
 export default function GiftSection() {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: "-100px" });
     return (
-        <section ref={ref} className="py-5 px-6 text-white bg-[#24384b] relative overflow-hidden ">
+        <section ref={ref} className="py-10 px-6 pb-13 text-white bg-[#24384b] relative overflow-hidden ">
             <div className=" mx-auto text-center relative z-10">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
@@ -45,7 +46,7 @@ export default function GiftSection() {
                         </svg>
 
                         <motion.div
-                            className='w-3/4 h-10 border-1 flex items-center justify-center  border-black/30 rounded-sm text-white hover:bg-white/10 transition-all shadow-md hover:shadow-lg hover:scale-105'>
+                            className='w-3/4 lg:w-1/4 h-10 border-1 flex items-center justify-center mt-5 border-white/50 rounded-sm text-white hover:bg-white/10 transition-all shadow-md hover:shadow-lg hover:scale-105'>
                             <a href="https://www.amazon.com.mx/wedding/guest-view/2POKARETCRD4M"
                                 className='text-[15px] playfair-display-main'
                             >VER MESA DE REGALO</a>
@@ -57,12 +58,12 @@ export default function GiftSection() {
                         <img src={sobre} alt="" className='h-30' />
                     </div>
 
-                    <div className='h-auto flex flex-col mt-10 flex items-center gap-5 '>
-                        <p className='playfair-display-main'>Si lo prefieres, también puedes realizar tu regalo mediante transferencia bancaria. Con gusto te compartiremos los datos.</p>
-                        <div className='w-3/4 h-40 border-1 rounded-lg'>
-                            <p>Mercado Pago</p>                            
-                            <p>Clave: 72296901012793612</p>
-                            <p>Alfredo Isa&iacute; P&eacute;rez Borb&oacute;n</p>
+                    <div className='h-auto  flex flex-col mt-10 flex items-center gap-5 '>
+                        <p className='playfair-display-main lg:w-1/2'>Si lo prefieres, también puedes realizar tu regalo mediante transferencia bancaria. Con gusto te compartiremos los datos.</p>
+                        <div className='flex flex-col w-3/4 lg:w-1/4 h-40 border-1 rounded-lg shadow-lg shadow-white/50 pt-3'>
+                            <img src={mp} alt="" className='h-15 self-center' />
+                            <p className='playfair-display-main pt-2 self-center '>Clave: 72296901012793612</p>
+                            <p className='playfair-display-main self-center '>Alfredo Isa&iacute; P&eacute;rez Borb&oacute;n</p>
                         </div>
                     </div>
                 </motion.div>

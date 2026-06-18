@@ -60,9 +60,9 @@ export function HeroSection() {
             className="relative h-screen flex items-center justify-between overflow-hidden"
         >
             {/* Fondo con gradiente suave */}
-            <div className="absolute max-w-6xl mx-auto h-230 w-full group">
+            <div className="absolute h-230 w-full group">
                 <div
-                    className="w-full h-full  bg-center bg-cover duration-500 relative overflow-hidden brightness-50"
+                    className="w-full h-full bg-center bg-cover duration-500 relative overflow-hidden brightness-50"
                     style={{ backgroundImage: `url(${slides[currentIndex].image})` }}
                 >
                 </div>

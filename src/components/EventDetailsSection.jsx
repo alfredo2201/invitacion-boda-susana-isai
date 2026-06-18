@@ -15,9 +15,9 @@ export function EventDetailsSection() {
 
 
   return (
-    <section ref={ref} className="py-15 bg-[#FFFBF2]">
+    <section ref={ref} className="py-15 bg-[#FFFBF2] ">
       <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-1 gap-8">
 
           <motion.div
             key={'ceremonia'}
