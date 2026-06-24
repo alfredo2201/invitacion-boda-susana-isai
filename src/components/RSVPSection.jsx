@@ -10,11 +10,11 @@ export function RSVPSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  const handleRSVP = () => {
+  const handleRSVPNovio = () => {
     const message = encodeURIComponent(
-      `¡Hola! 👋✨
+      `¡Hola Isai! 👋✨
 
-Con mucho gusto confirmamos nuestra asistencia a la boda de ${WEDDING_CONFIG.groom} y ${WEDDING_CONFIG.bride} 💒❤️
+Con mucho gusto confirmamos nuestra asistencia a tu boda 💒❤️
 
 Los nombres de las personas que asistirán son:
 
@@ -25,7 +25,21 @@ Estamos muy felices de acompañarlos en este día tan especial y celebrar junto 
     );
     window.open(`https://wa.me/${WEDDING_CONFIG.rsvpWhatsApp}?text=${message}`, '_blank');
   };
+const handleRSVPNovia = () => {
+    const message = encodeURIComponent(
+      `¡Hola Susana! 👋✨
 
+Con mucho gusto confirmamos nuestra asistencia a tu boda 💒❤️
+
+Los nombres de las personas que asistirán son:
+
+• Nombre 1
+• Nombre 2
+
+Estamos muy felices de acompañarlos en este día tan especial y celebrar junto a ustedes. ¡Nos vemos pronto! 🤍✨`
+    );
+    window.open(`https://wa.me/${WEDDING_CONFIG.rsvpWhatsAppNovia}?text=${message}`, '_blank');
+  };
   return (
     <section ref={ref} className="py-10 px-6 relative overflow-hidden">
       {/* Elemento decorativo */}
@@ -56,15 +70,26 @@ Estamos muy felices de acompañarlos en este día tan especial y celebrar junto 
             <h1 className='playfair-display-main uppercase text-white text-md'>Ser&aacute; un honor contar con tu presencia</h1>
             <p className='luxurious-script-regular text-white text-[35px]'>¡Te Esperamos!</p>
             <motion.button
-              onClick={handleRSVP}
+              onClick={handleRSVPNovia}
               initial={{ opacity: 0, scale: 0.9 }}
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.6, delay: 0.4 }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="w-2/3 items-center gap-3 bg-[#8B7355] text-white py-1 rounded-xl text-md playfair-display-main tracking-[.15em] uppercase hover:bg-[#6F5A42] transition-all shadow-xl hover:shadow-2xl hover:cursor-pointer"
+              className=" items-center gap-3 bg-[#8B7355] text-white py-1 rounded-xl text-md playfair-display-main tracking-[.15em] uppercase hover:bg-[#6F5A42] transition-all shadow-xl hover:shadow-2xl hover:cursor-pointer"
             >
-              Confirmar
+              Confirmar con la novia
+            </motion.button>
+            <motion.button
+              onClick={handleRSVPNovio}
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={isInView ? { opacity: 1, scale: 1 } : {}}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="items-center gap-3 bg-[#8B7355] text-white py-1 rounded-xl text-md playfair-display-main tracking-[.15em] uppercase hover:bg-[#6F5A42] transition-all shadow-xl hover:shadow-2xl hover:cursor-pointer"
+            >
+              Confirmar con el novio
             </motion.button>
           </div>
 

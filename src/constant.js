@@ -28,5 +28,6 @@ export const WEDDING_CONFIG = {
   },
   story: "Dos caminos se cruzaron por la gracia de Dios, dos corazones se unieron en fe y amor. Hoy celebramos el inicio de nuestra historia juntos, y queremos compartir este momento especial contigo.",
   rsvpWhatsApp: "+526682107900", // Número de WhatsApp para confirmación
+  rsvpWhatsAppNovia: "+526421514497", // Número de WhatsApp para confirmación
   musicUrl: "" // Reemplazar con tu música
 };
