@@ -12,7 +12,16 @@ export function RSVPSection() {
 
   const handleRSVP = () => {
     const message = encodeURIComponent(
-      `¡Hola! Confirmo mi asistencia para 2 personas a la boda de ${WEDDING_CONFIG.groom} y ${WEDDING_CONFIG.bride} 💒`
+      `¡Hola! 👋✨
+
+Con mucho gusto confirmamos nuestra asistencia a la boda de ${WEDDING_CONFIG.groom} y ${WEDDING_CONFIG.bride} 💒❤️
+
+Los nombres de las personas que asistirán son:
+
+• Nombre 1
+• Nombre 2
+
+Estamos muy felices de acompañarlos en este día tan especial y celebrar junto a ustedes. ¡Nos vemos pronto! 🤍✨`
     );
     window.open(`https://wa.me/${WEDDING_CONFIG.rsvpWhatsApp}?text=${message}`, '_blank');
   };
