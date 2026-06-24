@@ -65,20 +65,20 @@ export default function DressCode() {
               initial={{ opacity: 0, scale: 0 }}
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.6, delay: 0.6 }}
-              className="inline-block w-10 h-10 bg-green-500 rounded-full mx-1" />
+              className="inline-block w-10 h-10 bg-[#24384b] rounded-full mx-1" />
 
             <motion.div
               initial={{ opacity: 0, scale: 0 }}
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.6, delay: 0.7 }}
-              className="inline-block w-10 h-10 bg-red-500 rounded-full mr-1" />
+              className="inline-block w-10 h-10 bg-white rounded-full mr-1" />
 
             <motion.div
 
               initial={{ opacity: 0, scale: 0 }}
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.6, delay: 0.8 }}
-              className="inline-block w-10 h-10 bg-blue-500 rounded-full" />
+              className="inline-block w-10 h-10 bg-[#4F82BD] rounded-full" />
 
             <motion.div
 
@@ -87,8 +87,17 @@ export default function DressCode() {
               transition={{ duration: 0.6, delay: 0.9 }}
               className="inline-block w-10 h-10 bg-pink-500 rounded-full mx-1" />
 
+              
+            <motion.div
+
+              initial={{ opacity: 0, scale: 0 }}
+              animate={isInView ? { opacity: 1, scale: 1 } : {}}
+              transition={{ duration: 0.6, delay: 0.9 }}
+              className="inline-block w-10 h-10 bg-[#FF0000] rounded-full mx-1" />
+
             {/* <img src={fotoFecha} alt="" /> */}
           </motion.div>
+          
         </motion.div>
       </div>
     </section>

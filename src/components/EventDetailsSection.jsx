@@ -28,16 +28,16 @@ export function EventDetailsSection() {
           >
 
             <motion.div className='w-full h-auto p-5 flex flex-col'>
-              <img src={church} alt="" className='h-30 w-30 self-center' />
-              <h3 className="text-[85px] text-[#2C2C2C] luxurious-script-regular">
+              <img src={church} alt="" className='h-25 w-25 self-center' />
+              <h3 className="text-[70px] text-[#2C2C2C] luxurious-script-regular">
                 Ceremonia Religiosa
               </h3>
 
               <div className="text-xl text-[#2C2C2C] font-light leading-relaxed py-2">
-                <span className='playfair-display-main text-[30px]'>6:00 PM</span>
+                <span className='playfair-display-main text-[20px]'>6:00 PM</span>
                 <br />
-                <p className='uppercase playfair-display-main text-[17px]'>Iglesia de Dios Templo "La Hermosa"</p>
-                <span className='explora-regular text-[30px]'>Basconcobe, Son.</span>
+                <p className='uppercase playfair-display-main text-[14px]'>Iglesia de Dios Templo "La Hermosa"</p>
+                <span className='explora-regular text-[25px]'>Basconcobe, Son.</span>
               </div>
 
               <motion.div
@@ -63,7 +63,7 @@ export function EventDetailsSection() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.4 }}>
               <img src={rings} alt="" className='h-30 w-30 self-center' />
-              <h3 className="text-[85px] text-[#2C2C2C] luxurious-script-regular">
+              <h3 className="text-[70px] text-[#2C2C2C] luxurious-script-regular">
                 Recepci&oacute;n
               </h3>
 
@@ -72,10 +72,10 @@ export function EventDetailsSection() {
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8, delay: 0.4 }}
               >
-                <span className='playfair-display-main text-[30px]'>7:30 PM</span>
+                <span className='playfair-display-main text-[20px]'>7:30 PM</span>
                 <br />
-                <p className='uppercase playfair-display-main text-[17px]'>Sal&oacute;n de Eventos "Omar"</p>
-                <span className='explora-regular text-[30px]'>Basconcobe, Son.</span>
+                <p className='uppercase playfair-display-main text-[14px]'>Sal&oacute;n de Eventos "Omar"</p>
+                <span className='explora-regular text-[25px]'>Basconcobe, Son.</span>
               </motion.div>
 
 

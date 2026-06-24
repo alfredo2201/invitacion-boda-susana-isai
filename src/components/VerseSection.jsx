@@ -18,7 +18,7 @@ export function VerseSection() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h1 className='luxurious-script-regular text-[85px]'>Recomendaciones</h1>
+          <h1 className='luxurious-script-regular text-[70px]'>Recomendaciones</h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}

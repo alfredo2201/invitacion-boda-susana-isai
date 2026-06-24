@@ -30,7 +30,7 @@ export default function InitialSection({ initialOpacity, initialScale }) {
 
                 <div className="relative h-full grid grid-cols-1 place-content-between pb-15 pt-10">
                     <div>
-                        <h1 className="text-white text-[85px] luxurious-script-regular">
+                        <h1 className="text-white text-[70px] luxurious-script-regular">
                             Nuestra Boda
                         </h1>
 
@@ -41,14 +41,8 @@ export default function InitialSection({ initialOpacity, initialScale }) {
 
 
                     <div className="pt-5">
-                        <p className="text-white text-[12px] playfair-display-main tracking-[.25em]">
-                            PORQUE TÚ HAS SIDO PARTE DE NUESTRA
-                        </p>
-                        <p className="text-white text-[12px] playfair-display-main tracking-[.25em]">
-                            HISTORIA, QUEREMOS QUE ESTÉS EN
-                        </p>
-                        <p className="text-white text-[12px] playfair-display-main tracking-[.25em]">
-                            NUESTRO MEJOR CAPÍTULO
+                        <p className="text-white text-[11px] playfair-display-main tracking-[.25em] px-10">
+                            PORQUE TÚ HAS SIDO PARTE DE NUESTRA HISTORIA, QUEREMOS QUE ESTÉS EN NUESTRO MEJOR CAPÍTULO
                         </p>
                     </div>
                 </div>
@@ -65,7 +59,7 @@ export default function InitialSection({ initialOpacity, initialScale }) {
 
                 <div className='w-85 bg-gray-500'>
                     <div className='w-full h-15 bg-[#24384b] flex items-center'>
-                        <p className='text-white text-[12px] playfair-display-main px-10 tracking-[.1em]'>DA PLAY PARA ESCUCHAR NUESTRA CANCI&Oacute;N</p>
+                        <p className='text-white text-[11px] playfair-display-main px-10 tracking-[.1em]'>DA PLAY PARA ESCUCHAR NUESTRA CANCI&Oacute;N</p>
                     </div>
                     <AudioPlayer src={cancion}
                         color="#ffffff"

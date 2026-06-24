@@ -39,13 +39,13 @@ export function CountdownSection() {
                     initial="hidden"
                     animate={isInView ? "show" : "hidden"}
                     transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-                    className="text-white luxurious-script-regular text-[clamp(37px,10vw,60px)] text-center mb-1"
+                    className="text-white luxurious-script-regular text-[50px] text-center"
                 >
                     Solo Falta...
                 </motion.h1>
 
                 {/* Contador */}
-                <div className="flex justify-center w-full mt-6 mb-10">
+                <div className="flex justify-center w-full mb-10">
                     <div className="grid grid-cols-4 w-full max-w-xs sm:max-w-sm md:max-w-md playfair-display-main">
                         {[
                             { value: timeLeft.days,    label: 'Días'     },
@@ -78,7 +78,7 @@ export function CountdownSection() {
                                                 {String(item.value).padStart(2, '0')}
                                             </motion.div>
                                         </AnimatePresence>
-                                        <div className="text-[clamp(8px,2.3vw,12px)] uppercase tracking-widest text-white">
+                                        <div className="text-[12px] uppercase tracking-widest text-white">
                                             {item.label}
                                         </div>
                                     </div>
@@ -112,7 +112,7 @@ export function CountdownSection() {
                     {/* Cabecera días */}
                     <div className="grid grid-cols-7 h-7 sm:h-8 uppercase text-center playfair-display-main items-center px-1 sm:px-2">
                         {['Lun','Mar','Mie','Jue','Vie','Sab','Dom'].map(d => (
-                            <p key={d} className="text-[clamp(7px,2vw,11px)]">{d}</p>
+                            <p key={d} className="text-[clamp(11px,2vw,11px)]">{d}</p>
                         ))}
                     </div>
 
@@ -142,7 +142,7 @@ export function CountdownSection() {
                                             <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
                                         </motion.svg>
                                     ) : (
-                                        <p className="text-[clamp(9px,3vw,20px)] uppercase">
+                                        <p className="text-[clamp(15px,3vw,20px)] uppercase">
                                             {day ?? ''}
                                         </p>
                                     )}

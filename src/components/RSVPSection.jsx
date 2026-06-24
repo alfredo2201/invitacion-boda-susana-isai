@@ -29,7 +29,7 @@ export function RSVPSection() {
           transition={{ duration: 0.8 }}
           className='flex flex-col items-center'
         >
-          <h2 className="text-[85px] luxurious-script-regular text-[#2C2C2C]">
+          <h2 className="text-[70px] luxurious-script-regular text-[#2C2C2C]">
             Confirma tu Asistencia
           </h2>
           <div className="w-45 h-[1px] bg-[#8B7355] mx-auto mb-5" />
@@ -44,8 +44,8 @@ export function RSVPSection() {
           </motion.p>
           <img src={sello} alt="" className='h-30 w-30 translate-y-15' />
           <div className='flex flex-col w-full lg:w-1/2 bg-[#24384b] px-15 pt-20 pb-8 justify-center items-center gap-2'>
-            <h1 className='playfair-display-main uppercase text-white text-lg'>Ser&aacute; un honor contar con tu presencia</h1>
-            <p className='luxurious-script-regular text-white text-[40px]'>¡Te Esperamos!</p>
+            <h1 className='playfair-display-main uppercase text-white text-md'>Ser&aacute; un honor contar con tu presencia</h1>
+            <p className='luxurious-script-regular text-white text-[35px]'>¡Te Esperamos!</p>
             <motion.button
               onClick={handleRSVP}
               initial={{ opacity: 0, scale: 0.9 }}
