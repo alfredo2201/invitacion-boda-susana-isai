@@ -20,7 +20,7 @@ export default function GiftSection() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={isInView ? { opacity: 1, y: 0 } : {}}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="text-[60px] md:text-6xl luxurious-script-regular text-white">
+                        className="text-[85px]  luxurious-script-regular text-white">
                         Mesa de Regalos
                     </motion.h1>
                     <div className='w-full flex justify-center mb-5'>
@@ -30,7 +30,7 @@ export default function GiftSection() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={isInView ? { opacity: 1, y: 0 } : {}}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="text-md md:text-3xl text-white leading-relaxed mb-6 playfair-display-main"
+                        className="text-md text-white leading-relaxed mb-6 playfair-display-main"
                     >
                         El mejor reglao es tu presencia, pero si deseas hacernos llegar un bonito detalle lo recibiremos con mucho cariño
                     </motion.p>
@@ -53,17 +53,17 @@ export default function GiftSection() {
                         </motion.div>
                     </motion.div>
                     <div className='h-auto flex flex-col mt-10 '>
-                        <h1 className='playfair-display-main uppercase text-[20px] mb-5'>Lluvia de Sobres</h1>
-                        <p className='playfair-display-main'>Si deseas obsequiarnos algo más, tendremos una lluvia de sobres que nos ayudará a comenzar esta nueva aventura juntos.</p>
-                        <img src={sobre} alt="" className='h-30' />
+                        <h1 className='playfair-display-main uppercase text-xl] mb-5'>Lluvia de Sobres</h1>
+                        <p className='playfair-display-main text-md'>Si deseas obsequiarnos algo más, tendremos una lluvia de sobres que nos ayudará a comenzar esta nueva aventura juntos.</p>
+                        <img src={sobre} alt="" className='h-30 mt-3' />
                     </div>
 
-                    <div className='h-auto  flex flex-col mt-10 flex items-center gap-5 '>
-                        <p className='playfair-display-main lg:w-1/2'>Si lo prefieres, también puedes realizar tu regalo mediante transferencia bancaria. Con gusto te compartiremos los datos.</p>
+                    <div className='h-auto  flex flex-col mt-2 flex items-center gap-5 '>
+                        <p className='playfair-display-main lg:w-1/2 text-md'>Si lo prefieres, también puedes realizar tu regalo mediante transferencia bancaria. Con gusto te compartiremos los datos.</p>
                         <div className='flex flex-col w-3/4 lg:w-1/4 h-40 border-1 rounded-lg shadow-lg shadow-white/50 pt-3'>
                             <img src={mp} alt="" className='h-15 self-center' />
-                            <p className='playfair-display-main pt-2 self-center '>Clave: 72296901012793612</p>
-                            <p className='playfair-display-main self-center '>Alfredo Isa&iacute; P&eacute;rez Borb&oacute;n</p>
+                            <p className='playfair-display-main pt-2 self-center text-md'>Clave: 72296901012793612</p>
+                            <p className='playfair-display-main self-center text-md'>Alfredo Isa&iacute; P&eacute;rez Borb&oacute;n</p>
                         </div>
                     </div>
                 </motion.div>

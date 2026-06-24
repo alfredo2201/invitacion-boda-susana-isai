@@ -1,9 +1,5 @@
 import { useState, useEffect } from "react";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
-import image1 from '../assets/pedida_1.png'
-import image2 from '../assets/pedida_2.jpg'
-import image3 from '../assets/pedida_5.jpg'
-import image4 from '../assets/pedida_4.jpg'
 import { motion } from 'framer-motion';
 // ============================================
 // SECCIÓN 1
@@ -14,19 +10,31 @@ export function HeroSection() {
     const slides = [
         {
             id: 1,
-            image: image1,
+            image: 'https://res.cloudinary.com/dazthovzk/image/upload/v1782265899/WhatsApp_Image_2026-06-23_at_17.43.12_1_gu5ldb.jpg',
         },
         {
             id: 2,
-            image: image2,
+            image: "https://res.cloudinary.com/dazthovzk/image/upload/v1782265899/WhatsApp_Image_2026-06-23_at_17.43.11_lmbuen.jpg",
         },
         {
             id: 3,
-            image: image3,
+            image: 'https://res.cloudinary.com/dazthovzk/image/upload/v1782265898/WhatsApp_Image_2026-06-23_at_17.43.18_kl8viw.jpg',
         },
         {
             id: 4,
-            image: image4,
+            image: 'https://res.cloudinary.com/dazthovzk/image/upload/v1782265895/WhatsApp_Image_2026-06-23_at_17.43.16_3_bfdiyf.jpg',
+        },
+        {
+            id: 5,
+            image: 'https://res.cloudinary.com/dazthovzk/image/upload/v1782265894/WhatsApp_Image_2026-06-23_at_17.43.15_mrccmi.jpg',
+        },
+        {
+            id: 6,
+            image: 'https://res.cloudinary.com/dazthovzk/image/upload/v1782265893/WhatsApp_Image_2026-06-23_at_17.43.15_1_whdegt.jpg',
+        },
+                {
+            id: 7,
+            image: 'https://res.cloudinary.com/dazthovzk/image/upload/v1782265891/WhatsApp_Image_2026-06-23_at_17.43.12_2_higsqx.jpg',
         },
     ];
 
@@ -57,10 +65,10 @@ export function HeroSection() {
 
     return (
         <motion.section
-            className="relative h-screen flex items-center justify-between overflow-hidden"
+            className="relative h-130 flex items-center justify-between overflow-hidden"
         >
             {/* Fondo con gradiente suave */}
-            <div className="absolute h-230 w-full group">
+            <div className="absolute h-full w-full group">
                 <div
                     className="w-full h-full bg-center bg-cover duration-500 relative overflow-hidden brightness-50"
                     style={{ backgroundImage: `url(${slides[currentIndex].image})` }}

@@ -10,7 +10,7 @@ export default function DressCode() {
   return (
     <section ref={ref} className="py-10 px-6 ">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-[60px] md:text-6xl luxurious-script-regular text-[#2C2C2C] ">
+        <h2 className="text-[85px]  luxurious-script-regular text-[#2C2C2C] ">
           Dress Code
         </h2>
 
@@ -23,14 +23,14 @@ export default function DressCode() {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className='text-xl md:text-2xl px-10 pb-2 text-dark leading-6 playfair-display-main'>
+            className='text-xl px-10 pb-2 text-dark leading-6 playfair-display-main'>
             FORMAL
           </motion.h4>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-md md:text-2xl px-10 text-dark leading-6 playfair-display-main"
+            className="text-md px-10 text-dark leading-6 playfair-display-main"
           >
             El blanco está reservado para la novia,
             ¡nos encantará verte en otros colores

@@ -3,47 +3,68 @@ import { motion, useInView } from 'framer-motion';
 import { AudioPlayer } from 'react-audio-play';
 import cancion from '../assets/Cancion.mp3'
 
+
 export default function InitialSection({ initialOpacity, initialScale }) {
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: true, margin: "-100px" });  
-        
+    const isInView = useInView(ref, { once: true, margin: "-100px" });
+
     return (
-        <motion.section className='bg-[#FFFBF2] w-full h-200'
-            style={{ opacity: initialOpacity, scale: initialScale }}>
+        <section className='bg-[#FFFBF2] w-full h-auto'
+        >
 
-            <div
-                initial={{ opacity: 0, y: 30 }}
+            <motion.div
+                ref={ref}
+                className="text-center w-full h-155 flex flex-col items-center justify-center relative bg-cover bg-center"
+                style={{
+                    opacity: initialOpacity,
+                    scale: initialScale,
+                    backgroundImage:
+                        "url('https://res.cloudinary.com/dazthovzk/image/upload/v1782262146/Foto_1_ued7fh.jpg')"
+                }}
+                initial={{ opacity: 0, y: 0 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.8 }}
-                className="text-center bg-[#24384b] w-full h-4/6 flex flex-col items-center"
+                transition={{ duration: 1, ease: "easeOut" }}
             >
+                {/* Overlay oscuro para mejorar legibilidad */}
+                <div className="absolute inset-0 bg-[#24384b]/50"></div>
 
-                <h1 className='text-white text-[80px] luxurious-script-regular '>Nuestra Boda</h1>
+                <div className="relative h-full grid grid-cols-1 place-content-between pb-15 pt-10">
+                    <div>
+                        <h1 className="text-white text-[85px] luxurious-script-regular">
+                            Nuestra Boda
+                        </h1>
 
-                <p className='-translate-y-7 text-white text-[16px] playfair-display-main tracking-[.15em]'>ISA&Iacute; & SUSANA</p>
+                        <p className="-translate-y-7 text-white text-[16px] playfair-display-main tracking-[.15em]">
+                            ISAÍ & SUSANA
+                        </p>
+                    </div>
 
-                <img src="" alt="" className='w-60 h-60' />
 
-                <div className='pt-5'>
-                    <p className='text-white text-[12px] playfair-display-main px-2 tracking-[.25em]'>PORQUE T&Uacute; HAS SIDO PARTE DE NUESTRA </p>
-                    <p className='text-white text-[12px] playfair-display-main px-2 tracking-[.25em]'>HISTORIA, QUEREMOS QUE EST&Eacute;S EN </p>
-                    <p className='text-white text-[12px] playfair-display-main px-2 tracking-[.25em]'>NUESTRO MEJOR CAP&Iacute;TULO</p>
+                    <div className="pt-5">
+                        <p className="text-white text-[12px] playfair-display-main tracking-[.25em]">
+                            PORQUE TÚ HAS SIDO PARTE DE NUESTRA
+                        </p>
+                        <p className="text-white text-[12px] playfair-display-main tracking-[.25em]">
+                            HISTORIA, QUEREMOS QUE ESTÉS EN
+                        </p>
+                        <p className="text-white text-[12px] playfair-display-main tracking-[.25em]">
+                            NUESTRO MEJOR CAPÍTULO
+                        </p>
+                    </div>
                 </div>
-
-
-            </div>
+            </motion.div>
             <div
                 initial={{ opacity: 0, y: 30 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8 }}
-                className="text-center w-full h-2/6 flex flex-col items-center py-3"
+                className="text-center w-full flex flex-col items-center py-3"
             >
                 <div className='h-1/2'>
-                    <img src="" alt="" className='w-25 h-25' />
+                    <img src='https://res.cloudinary.com/dazthovzk/image/upload/v1782262313/anillos-de-boda_q5gmpx.png' alt="" className='w-25 h-25 ' />
                 </div>
 
-                <div className='w-2/3 h-1/2 bg-gray-500'>
-                    <div className='w-full h-1/2 bg-[#24384b] flex items-center'>
+                <div className='w-85 bg-gray-500'>
+                    <div className='w-full h-15 bg-[#24384b] flex items-center'>
                         <p className='text-white text-[12px] playfair-display-main px-10 tracking-[.1em]'>DA PLAY PARA ESCUCHAR NUESTRA CANCI&Oacute;N</p>
                     </div>
                     <AudioPlayer src={cancion}
@@ -56,7 +77,7 @@ export default function InitialSection({ initialOpacity, initialScale }) {
                     />
                 </div>
             </div>
-        </motion.section>
+        </section>
     )
 
 }

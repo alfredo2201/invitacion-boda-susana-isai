@@ -17,26 +17,26 @@ export default function ProgramSection() {
                 transition={{ duration: 0.8 }}
                 className="text-center my-3 flex flex-col justify-center items-center"
             >
-                <h1 className='luxurious-script-regular text-[50px]'>Itinerario</h1>
-                <p className='playfair-display-main -translate-y-5'>Los detalles del gran d&iacute;a</p>
-                <div className='grid grid-cols-3'>
+                <h1 className='luxurious-script-regular text-[85px]'>Itinerario</h1>
+                <p className='playfair-display-main -translate-y-5 uppercase text-xl'>Los detalles del gran d&iacute;a</p>
+                <div className='grid grid-cols-3 mt-7'>
                     {/* Columna izquierda */}
                     <div className='flex flex-col gap-10 text-right pr-4'>
                         <div className='h-15'>
-                            <p className='playfair-display-main text-[15px]'>18:00 hrs</p>
-                            <span className='playfair-display-main text-[15px]'>Ceremonia</span>
+                            <p className='playfair-display-main text-md'>18:00 hrs</p>
+                            <span className='playfair-display-main text-md'>Ceremonia</span>
                         </div>
                         <div className='h-15'>
-                            <p className='playfair-display-main text-[15px]'>19:00 hrs</p>
-                            <span className='playfair-display-main text-[15px]'>Recepción</span>
+                            <p className='playfair-display-main text-md'>19:00 hrs</p>
+                            <span className='playfair-display-main text-md'>Recepción</span>
                         </div>
                         <div className='h-15'>
-                            <p className='playfair-display-main text-[15px]'>20:00 hrs</p>
-                            <span className='playfair-display-main text-[15px]'>Llegada</span>
+                            <p className='playfair-display-main text-md'>20:00 hrs</p>
+                            <span className='playfair-display-main text-md'>Llegada</span>
                         </div>
                         <div className='h-15'>
-                            <p className='playfair-display-main text-[15px]'>22:00 hrs</p>
-                            <span className='playfair-display-main text-[15px]'>Cena</span>
+                            <p className='playfair-display-main text-md'>22:00 hrs</p>
+                            <span className='playfair-display-main text-md'>Cena</span>
                         </div>
                     </div>
 
@@ -74,7 +74,7 @@ export default function ProgramSection() {
                         <img src={people} alt="" className='h-8' />
                     </div>
                     <div className='w-5/6'>
-                        <p className='playfair-display-main text-[13px] text-left'>Toda la informacion organizada para que solo te preocupes por disfrutar</p>
+                        <p className='playfair-display-main text-md text-left'>Toda la informacion organizada para que solo te preocupes por disfrutar</p>
                     </div>
                 </div>
             </div>

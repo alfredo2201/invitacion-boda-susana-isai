@@ -11,6 +11,7 @@ import { Footer } from './components/Footer';
 import ProgramSection from './components/ProgramSection';
 import GiftSection from './components/GiftSection';
 import InitialSection from './components/InitialSection';
+import LastCarrousel from './components/LastCarrousel';
 
 
 // ============================================
@@ -45,6 +46,7 @@ export default function WeddingInvitation() {
       <RSVPSection />
       {/* Galeria de fotos */}
       <VerseSection />
+      <LastCarrousel></LastCarrousel>
       {/* Footer */}
       <Footer />
     </div>

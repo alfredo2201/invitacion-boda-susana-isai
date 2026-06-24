@@ -20,11 +20,11 @@ export default function OurParents() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-[60px] md:text-6xl luxurious-script-regular text-white ">
+          <h2 className="text-[85px] luxurious-script-regular text-white ">
             Padres 
           </h2>
           <div className="w-40 h-[1px] bg-[#FFFBF2] mx-auto" />
-          <h3 className='pt-5 text-[17px] text-[#FFFBF2] playfair-display-main md:text-6xl text-[#2C2C2C] px-15'>
+          <h3 className='pt-5 text-[15px] uppercase text-[#FFFBF2] playfair-display-main text-[#2C2C2C] px-15'>
             ¡Gracias por acompañarnos
             en este día tan especial!
           </h3>
