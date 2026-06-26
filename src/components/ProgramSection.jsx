@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import { useInView } from 'framer-motion';
+import { motion } from 'framer-motion';
 import church from '../assets/church-2.svg'
 import recepcion from '../assets/recepcion.svg'
 import novios from '../assets/novios.svg'
@@ -19,20 +20,18 @@ export default function ProgramSection() {
             >
                 <h1 className='luxurious-script-regular text-[85px]'>Itinerario</h1>
                 <p className='playfair-display-main -translate-y-5 uppercase text-xl'>Los detalles del gran d&iacute;a</p>
-                <div className='grid grid-cols-3 mt-7'>
+                <div className='grid grid-cols-3 mt-7 w-50'>
                     {/* Columna izquierda */}
-                    <div className='flex flex-col gap-10 text-right pr-4'>
+                    <div className='flex flex-col gap-10 text-right '>
                         <div className='h-15'>
-                            <p className='playfair-display-main text-md'>18:00 hrs</p>
-                            <span className='playfair-display-main text-md'>Ceremonia</span>
+                           <img src={church} alt="" className='h-13' />
                         </div>
                         <div className='h-15'>
-                            <p className='playfair-display-main text-md'>19:00 hrs</p>
+                            <p className='playfair-display-main text-md'>18:30 hrs</p>
                             <span className='playfair-display-main text-md'>Recepción</span>
                         </div>
                         <div className='h-15'>
-                            <p className='playfair-display-main text-md'>20:00 hrs</p>
-                            <span className='playfair-display-main text-md'>Llegada</span>
+                           <img src={novios} alt="" className='h-13' />
                         </div>
                         <div className='h-15'>
                             <p className='playfair-display-main text-md'>22:00 hrs</p>
@@ -49,19 +48,28 @@ export default function ProgramSection() {
                         {[1, 2, 3, 4].map((item) => (
                             <div
                                 key={item}
-                                className='relative z-10 w-3 h-3 rounded-full bg-black'
-                            />
+                                className='relative z-10 w-3 h-3 rounded-full bg-black flex justify-center'
+                            >
+                                <motion.svg                                    
+                                    className="w-2 text-white fill-current cursor-pointer"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                </motion.svg>
+                            </div>
                         ))}
                     </div>
-                    <div className='flex flex-col gap-10 text-left pr-4'>
-                        <div className='h-15'>
-                            <img src={church} alt="" className='h-13' />
+                    <div className='flex flex-col gap-10 text-left '>
+                        <div className='h-15 text-right'>                            
+                             <p className='playfair-display-main text-md'>17:30 hrs</p>
+                            <span className='playfair-display-main text-md'>Ceremonia</span>
                         </div>
                         <div className='h-15'>
                             <img src={recepcion} alt="" className='h-13' />
                         </div>
-                        <div className='h-15'>
-                            <img src={novios} alt="" className='h-13' />
+                        <div className='h-15'>                            
+                             <p className='playfair-display-main text-md'>19:00 hrs</p>
+                            <span className='playfair-display-main text-md'>Entrada</span>
                         </div>
                         <div className='h-15'>
                             <img src={dinner} alt="" className='h-15' />
