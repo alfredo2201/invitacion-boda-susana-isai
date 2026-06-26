@@ -45,8 +45,9 @@ export default function WeddingInvitation() {
       {/* Confirmacion de asistencia */}
       <RSVPSection />
       {/* Galeria de fotos */}
-      <VerseSection />
       <LastCarrousel></LastCarrousel>
+      <VerseSection />
+      
       {/* Footer */}
       <Footer />
     </div>
