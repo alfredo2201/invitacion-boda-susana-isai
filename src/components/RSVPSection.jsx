@@ -25,7 +25,7 @@ Estamos muy felices de acompañarlos en este día tan especial y celebrar junto 
     );
     window.open(`https://wa.me/${WEDDING_CONFIG.rsvpWhatsApp}?text=${message}`, '_blank');
   };
-const handleRSVPNovia = () => {
+  const handleRSVPNovia = () => {
     const message = encodeURIComponent(
       `¡Hola Susana! 👋✨
 
@@ -52,7 +52,7 @@ Estamos muy felices de acompañarlos en este día tan especial y celebrar junto 
           transition={{ duration: 0.8 }}
           className='flex flex-col items-center'
         >
-          <h2 className="text-[70px] luxurious-script-regular text-[#2C2C2C]">
+          <h2 className="text-[60px] luxurious-script-regular text-[#2C2C2C]">
             Confirma tu Asistencia
           </h2>
           <div className="w-45 h-[1px] bg-[#8B7355] mx-auto mb-5" />
@@ -61,9 +61,9 @@ Estamos muy felices de acompañarlos en este día tan especial y celebrar junto 
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-xl text-[#6B6B6B] playfair-display-main leading-relaxed"
+            className="text-md text-[#6B6B6B] playfair-display-main leading-relaxed"
           >
-            Por favor confirma tu asistencia antes del 1 de Agosto.
+            Por favor confirma tu asistencia antes del 1 de Septiembre.
           </motion.p>
           <img src={sello} alt="" className='h-30 w-30 translate-y-15' />
           <div className='flex flex-col w-full lg:w-1/2 bg-[#24384b] px-15 pt-20 pb-8 justify-center items-center gap-2'>
@@ -76,7 +76,7 @@ Estamos muy felices de acompañarlos en este día tan especial y celebrar junto 
               transition={{ duration: 0.6, delay: 0.4 }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className=" items-center gap-3 bg-[#8B7355] text-white py-1 rounded-xl text-md playfair-display-main tracking-[.15em] uppercase hover:bg-[#6F5A42] transition-all shadow-xl hover:shadow-2xl hover:cursor-pointer"
+              className=" items-center gap-3 bg-[#8B7355] text-white py-1 rounded-xl text-sm playfair-display-main tracking-[.15em] uppercase hover:bg-[#6F5A42] transition-all shadow-xl hover:shadow-2xl hover:cursor-pointer"
             >
               Confirmar con la novia
             </motion.button>
@@ -87,7 +87,7 @@ Estamos muy felices de acompañarlos en este día tan especial y celebrar junto 
               transition={{ duration: 0.6, delay: 0.4 }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="items-center gap-3 bg-[#8B7355] text-white py-1 rounded-xl text-md playfair-display-main tracking-[.15em] uppercase hover:bg-[#6F5A42] transition-all shadow-xl hover:shadow-2xl hover:cursor-pointer"
+              className="items-center gap-3 bg-[#8B7355] text-white py-1 rounded-xl text-sm playfair-display-main tracking-[.15em] uppercase hover:bg-[#6F5A42] transition-all shadow-xl hover:shadow-2xl hover:cursor-pointer"
             >
               Confirmar con el novio
             </motion.button>

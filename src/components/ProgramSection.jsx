@@ -18,8 +18,8 @@ export default function ProgramSection() {
                 transition={{ duration: 0.8 }}
                 className="text-center my-3 flex flex-col justify-center items-center"
             >
-                <h1 className='luxurious-script-regular text-[85px]'>Itinerario</h1>
-                <p className='playfair-display-main -translate-y-5 uppercase text-xl'>Los detalles del gran d&iacute;a</p>
+                <h1 className='luxurious-script-regular text-[60px]'>Itinerario</h1>
+                <p className='playfair-display-main -translate-y-5 uppercase text-md'>Los detalles del gran d&iacute;a</p>
                 <div className='grid grid-cols-3 mt-7 w-50'>
                     {/* Columna izquierda */}
                     <div className='flex flex-col gap-10 text-right '>

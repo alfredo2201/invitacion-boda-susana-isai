@@ -35,7 +35,7 @@ export default function DressCode() {
   return (
     <section ref={ref} className="py-10 px-6 ">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-[85px]  luxurious-script-regular text-[#2C2C2C] ">
+        <h2 className="text-[60px]  luxurious-script-regular text-[#2C2C2C] ">
           Dress Code
         </h2>
 
@@ -48,14 +48,14 @@ export default function DressCode() {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className='text-xl px-10 pb-2 text-dark leading-6 playfair-display-main'>
+            className='text-lg px-10 pb-2 text-dark leading-6 playfair-display-main'>
             FORMAL
           </motion.h4>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-md px-10 text-dark leading-6 playfair-display-main"
+            className="text-sm px-10 text-dark leading-6 playfair-display-main"
           >
             El blanco está reservado para la novia,
             ¡nos encantará verte en otros colores
@@ -64,7 +64,7 @@ export default function DressCode() {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className='text-lg px-1 pb-2 text-dark leading-6 playfair-display-main mt-10'>
+            className='text-md px-1 pb-2 text-dark leading-6 playfair-display-main mt-10'>
             IDEAS PARA LAS MUJERES
           </motion.h4>
           <DressCarrousell photos={PHOTOS_WOMAN}></DressCarrousell>
@@ -72,7 +72,7 @@ export default function DressCode() {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className='text-lg px-1 pb-2 text-dark leading-6 playfair-display-main mt-10'>
+            className='text-md px-1 pb-2 text-dark leading-6 playfair-display-main mt-10'>
             IDEAS PARA LOS CABALLEROS
           </motion.h4>
           <DressCarrousell photos={PHOTOS_GENTELMAN}></DressCarrousell>
@@ -83,21 +83,46 @@ export default function DressCode() {
             className="mt-5 inline-block "
           >
             <motion.p
+              className='text-black playfair-display-main mb-3'>
+              Colores exclusivos para los novios:
+            </motion.p>
+
+            <div className='flex justify-center gap-2 mb-3'>
+              <div>
+                <motion.div
+                  initial={{ opacity: 0, scale: 0 }}
+                  animate={isInView ? { opacity: 1, scale: 1 } : {}}
+                  transition={{ duration: 0.6, delay: 0.6 }}
+                  className="inline-block w-15 h-15 bg-[#24384b] rounded-xl mx-3 shadow-md" />
+                <motion.h4
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={isInView ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.8, delay: 0.3 }}
+                  className='text-sm px-1  text-black/50 leading-6 playfair-display-main'>
+                  Azul Marino
+                </motion.h4>
+              </div>
+
+              <div>
+                <motion.div
+                  initial={{ opacity: 0, scale: 0 }}
+                  animate={isInView ? { opacity: 1, scale: 1 } : {}}
+                  transition={{ duration: 0.6, delay: 0.6 }}
+                  className="inline-block w-15 h-15 bg-white rounded-xl mr-1 shadow-md" />
+                <motion.h4
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={isInView ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.8, delay: 0.3 }}
+                  className='text-sm px-1  text-black/50 leading-6 playfair-display-main'>
+                  Blanco
+                </motion.h4>
+              </div>
+            </div>
+
+            <motion.p
               className='text-black/50 playfair-display-main mb-3'>
               No Usar:
             </motion.p>
-            <motion.div
-
-              initial={{ opacity: 0, scale: 0 }}
-              animate={isInView ? { opacity: 1, scale: 1 } : {}}
-              transition={{ duration: 0.6, delay: 0.6 }}
-              className="inline-block w-10 h-10 bg-[#24384b] rounded-full mx-1" />
-
-            <motion.div
-              initial={{ opacity: 0, scale: 0 }}
-              animate={isInView ? { opacity: 1, scale: 1 } : {}}
-              transition={{ duration: 0.6, delay: 0.7 }}
-              className="inline-block w-10 h-10 bg-white rounded-full mr-1" />
 
             <motion.div
 
@@ -113,16 +138,20 @@ export default function DressCode() {
               transition={{ duration: 0.6, delay: 0.9 }}
               className="inline-block w-10 h-10 bg-pink-500 rounded-full mx-1" />
 
-
             <motion.div
-
               initial={{ opacity: 0, scale: 0 }}
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.6, delay: 0.9 }}
               className="inline-block w-10 h-10 bg-[#FF0000] rounded-full mx-1" />
 
-
+            <motion.div
+              initial={{ opacity: 0, scale: 0 }}
+              animate={isInView ? { opacity: 1, scale: 1 } : {}}
+              transition={{ duration: 0.6, delay: 0.9 }}
+              className="inline-block w-10 h-10 bg-[#FFF200] rounded-full mx-1" />
           </motion.div>
+
+
 
         </motion.div>
       </div>

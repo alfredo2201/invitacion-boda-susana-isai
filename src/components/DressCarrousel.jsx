@@ -39,7 +39,7 @@ export default function DressCarrousell({ photos, autoPlay = true, interval = 40
   };
 
   return (
-    <div className="relative w-full overflow-hidden bg-black select-none rounded-4xl">
+    <div className="relative h-70 overflow-hidden bg-black select-none rounded-4xl">
 
       {/* Track con AnimatePresence */}
       <AnimatePresence initial={false} custom={direction} mode="popLayout">

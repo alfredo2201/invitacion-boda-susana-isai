@@ -29,7 +29,7 @@ export function EventDetailsSection() {
 
             <motion.div className='w-full h-auto p-5 flex flex-col'>
               <img src={church} alt="" className='h-25 w-25 self-center' />
-              <h3 className="text-[70px] text-[#2C2C2C] luxurious-script-regular">
+              <h3 className="text-[60px] text-[#2C2C2C] luxurious-script-regular">
                 Ceremonia Religiosa
               </h3>
 
@@ -62,8 +62,8 @@ export function EventDetailsSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.4 }}>
-              <img src={rings} alt="" className='h-30 w-30 self-center' />
-              <h3 className="text-[70px] text-[#2C2C2C] luxurious-script-regular">
+              <img src={rings} alt="" className='h-25 w-25 self-center' />
+              <h3 className="text-[60px] text-[#2C2C2C] luxurious-script-regular">
                 Recepci&oacute;n
               </h3>
 

@@ -18,7 +18,7 @@ export function VerseSection() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h1 className='luxurious-script-regular text-[70px]'>Recomendaciones</h1>
+          <h1 className='luxurious-script-regular text-[60px]'>Recomendaciones</h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -41,7 +41,7 @@ export function VerseSection() {
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-xl  playfair-display-main uppercase text-white mt-7"
+            className="text-md  playfair-display-main uppercase text-white mt-7"
           >
             Sin ni&ntilde;os
           </motion.p>
@@ -49,7 +49,7 @@ export function VerseSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-md md:text-lg font-light leading-relaxed italic"
+            className="text-sm md:text-lg font-light leading-relaxed italic"
           >            
             Un evento para adultos est&aacute; en camino. !Asi que preparense para una noche llena de diversi&oacute;n! Dejemos a los ni&ntilde;os en casa esta vez.
           </motion.p>

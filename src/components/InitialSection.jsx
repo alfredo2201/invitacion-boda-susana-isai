@@ -47,15 +47,15 @@ export default function InitialSection({ initialOpacity, initialScale }) {
                     </div>
                 </div>
             </motion.div>
-            <div
+            <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8 }}
                 className="text-center w-full flex flex-col items-center py-3"
             >
-                <div className='h-1/2'>
-                    <img src='https://res.cloudinary.com/dazthovzk/image/upload/v1782262313/anillos-de-boda_q5gmpx.png' alt="" className='w-25 h-25 ' />
-                </div>
+                <motion.div className='h-1/2'>
+                    <motion.img src='https://res.cloudinary.com/dazthovzk/image/upload/v1782262313/anillos-de-boda_q5gmpx.png' alt="" className='w-25 h-25 ' />
+                </motion.div>
 
                 <div className='w-85 bg-gray-500'>
                     <div className='w-full h-15 bg-[#24384b] flex items-center'>
@@ -70,7 +70,7 @@ export default function InitialSection({ initialOpacity, initialScale }) {
                         className='.custom-style'
                     />
                 </div>
-            </div>
+            </motion.div>
         </section>
     )
 
