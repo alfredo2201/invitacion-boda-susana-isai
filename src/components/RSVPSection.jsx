@@ -67,8 +67,9 @@ Estamos muy felices de acompañarlos en este día tan especial y celebrar junto 
           </motion.p>
           <img src={sello} alt="" className='h-30 w-30 translate-y-15' />
           <div className='flex flex-col w-full lg:w-1/2 bg-[#24384b] px-15 pt-20 pb-8 justify-center items-center gap-2'>
-            <h1 className='playfair-display-main uppercase text-white text-md'>Ser&aacute; un honor contar con tu presencia</h1>
+            <h1 className='playfair-display-main uppercase text-white text-md'>Ser&aacute; un honor contar con tu presencia</h1>        
             <p className='luxurious-script-regular text-white text-[35px]'>¡Te Esperamos!</p>
+            <p className='playfair-display-main text-white text-sm'>Haz clic en el botón de abajo y confirma tu asistencia</p>
             <motion.button
               onClick={handleRSVPNovia}
               initial={{ opacity: 0, scale: 0.9 }}
