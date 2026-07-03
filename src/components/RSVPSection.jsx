@@ -12,7 +12,7 @@ export function RSVPSection() {
 
   // Agrega un campo nuevo vacío
   const agregarNombre = () => {
-    if (nombres.length >= 3) return; // máximo 3 personas
+    if (nombres.length >= 4) return; // máximo 4 personas
     setNombres([...nombres, '']);
   };
 
@@ -176,7 +176,7 @@ export function RSVPSection() {
                   <span className="playfair-display-main text-xs tracking-[.12em] uppercase">
                     Agregar persona
                     {nombres.length > 1 && (
-                      <span className="ml-1 opacity-50">({nombres.length}/3)</span>
+                      <span className="ml-1 opacity-50">({nombres.length}/4)</span>
                     )}
                   </span>
                 </motion.button>
