@@ -12,7 +12,7 @@ export function RSVPSection() {
 
   // Agrega un campo nuevo vacío
   const agregarNombre = () => {
-    if (nombres.length >= 10) return; // máximo 10 personas
+    if (nombres.length >= 3) return; // máximo 3 personas
     setNombres([...nombres, '']);
   };
 
