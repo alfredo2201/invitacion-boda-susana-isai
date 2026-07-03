@@ -176,7 +176,7 @@ export function RSVPSection() {
                   <span className="playfair-display-main text-xs tracking-[.12em] uppercase">
                     Agregar persona
                     {nombres.length > 1 && (
-                      <span className="ml-1 opacity-50">({nombres.length}/10)</span>
+                      <span className="ml-1 opacity-50">({nombres.length}/3)</span>
                     )}
                   </span>
                 </motion.button>
