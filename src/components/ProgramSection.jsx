@@ -27,7 +27,7 @@ export default function ProgramSection() {
                            <img src={church} alt="" className='h-13' />
                         </div>
                         <div className='h-15'>
-                            <p className='playfair-display-main text-md'>18:30 hrs</p>
+                            <p className='playfair-display-main text-md'>19:00 hrs</p>
                             <span className='playfair-display-main text-md'>Recepción</span>
                         </div>
                         <div className='h-15'>

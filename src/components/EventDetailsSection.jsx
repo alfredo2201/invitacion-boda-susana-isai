@@ -34,7 +34,7 @@ export function EventDetailsSection() {
               </h3>
 
               <div className="text-xl text-[#2C2C2C] font-light leading-relaxed py-2">
-                <span className='playfair-display-main text-[20px]'>6:00 PM</span>
+                <span className='playfair-display-main text-[20px]'>5:30 PM</span>
                 <br />
                 <p className='uppercase playfair-display-main text-[14px]'>Iglesia de Dios Templo "La Hermosa"</p>
                 <span className='explora-regular text-[25px]'>Basconcobe, Son.</span>
@@ -72,7 +72,7 @@ export function EventDetailsSection() {
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8, delay: 0.4 }}
               >
-                <span className='playfair-display-main text-[20px]'>7:30 PM</span>
+                <span className='playfair-display-main text-[20px]'>7:00 PM</span>
                 <br />
                 <p className='uppercase playfair-display-main text-[14px]'>Sal&oacute;n de Eventos "Omar"</p>
                 <span className='explora-regular text-[25px]'>Basconcobe, Son.</span>
